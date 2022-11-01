@@ -1,8 +1,10 @@
-package hm;
+package geometric.shapes;
 
 import java.util.Scanner;
 
 public class Rectangle extends ShapeImp {
+
+    public static final String NAME = "Rectangle";
     private double leftSide;
     private double bottomSide;
     private double rightSide;
@@ -39,12 +41,24 @@ public class Rectangle extends ShapeImp {
     }
 
     @Override
-    double calculateArea() {
+    public double calculateArea() {
         return leftSide * bottomSide;
     }
 
     @Override
-    double calculatePerimeter() {
+    public double calculatePerimeter() {
         return bottomSide + bottomSide + rightSide + upperSide;
+    }
+
+    @Override
+    public String toString() {
+        return NAME;
+    }
+
+    @Override
+    public void printInfo() {
+        System.out.println("Shape type: " + NAME);
+        System.out.println("Area of " + NAME + ":" + this.getArea());
+        System.out.println("Perimeter of " + NAME + ":" + this.getPerimeter());
     }
 }

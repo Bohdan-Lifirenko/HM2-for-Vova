@@ -1,8 +1,8 @@
-package hm;
+package geometric.shapes;
 
 public interface Shape {
 
-    double calculateArea();
+    public double calculateArea();
 
-    double calculatePerimeter();
+    public double calculatePerimeter();
 }

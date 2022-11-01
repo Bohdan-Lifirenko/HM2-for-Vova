@@ -1,4 +1,4 @@
-package hm;
+package geometric.shapes;
 
 public abstract class ShapeImp {
     private double area;
@@ -21,7 +21,9 @@ public abstract class ShapeImp {
         this.perimeter = perimeter;
     }
 
-    abstract double calculateArea();
+    public abstract double calculateArea();
 
-    abstract double calculatePerimeter();
+    public abstract double calculatePerimeter();
+
+    public abstract void printInfo();
 }
